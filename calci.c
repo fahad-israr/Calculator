@@ -13,6 +13,6 @@ int main()
     if(c==3)printf("Product is:%d",a*b);
     if(c==4){
         if(b==0)printf("divide by zero error not possible...");
-        
+        else printf("division is %d",a/b)
     return 0;
 }
