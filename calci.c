@@ -9,8 +9,9 @@ int main()
     int c;
     scanf("%d",&c);
     if(c==1)printf("Sum is:%d\n",a+b);
-    if(c==2)printf("Diff is:%d",a-b);
-    if(c==3)printf("Product is:%d",a*b);
-    if(c==4)printf("Quotient is%d",a/b);
+    else if(c==2)printf("Diff is:%d",a-b);
+    else if(c==3)printf("Product is:%d",a*b);
+    else if(c==4 && b!=0) printf("Quotient is%d",a/b);
+    else printf("invalid input");
     return 0;
 }
