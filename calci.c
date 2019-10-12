@@ -8,9 +8,16 @@ int main()
     printf("Enter Choice:\n 1 for Add \n 2 for Subtract \n 3 for Multiply \n 4 for Divide\n ");
     int c;
     scanf("%d",&c);
-    if(c==1)printf("Sum is:%d\n",a+b);
-    if(c==2)printf("Diff is:%d",a-b);
-    if(c==3)printf("Product is:%d",a*b);
-    if(c==4)printf("Quotient is%d",a/b);
+    if(c==1)printf("Sum is: %d\n",a+b);
+    else if(c==2)printf("Diff is: %d",a-b);
+    else if(c==3)printf("Product is: %d",a*b);
+    else if(c==4){
+        if(b==0)
+            printf("Denominator is zero. So it can't be divided");
+        else 
+            printf("Quotient is: %d",a/b);
+   }
+    else
+        printf("Invalid Input.");
     return 0;
 }
