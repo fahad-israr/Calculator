@@ -8,6 +8,7 @@ int main()
     printf("Enter Choice:\n 1 for Add \n 2 for Subtract \n 3 for Multiply \n 4 for Divide\n ");
     int c;
     scanf("%d",&c);
+    if(b==0)printf("Provide Non-zero value for b");
     if(c==1)printf("Sum is:%d\n",a+b);
     if(c==2)printf("Diff is:%d",a-b);
     if(c==3)printf("Product is:%d",a*b);
